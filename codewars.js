@@ -47,3 +47,10 @@ function getAverage(marks) {
 // THE SOUL OF WIT: REVERSE AN ARRAY
 // https://www.codewars.com/kata/59b81886460387d8fc000043
 
+
+// Works but > 30 characters
+const reverse = a => {
+    let result = [];
+    a.forEach(x => result.unshift(x));
+    return result;
+  }
