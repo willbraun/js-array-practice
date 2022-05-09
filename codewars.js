@@ -22,7 +22,17 @@ const arr = N => N === undefined ? [] : [...Array(N).keys()];
 // Drone Fly-By
 // https://www.codewars.com/kata/58356a94f8358058f30004b5/train/javascript
 
-
+function flyBy(lamps, drone){
+    let lampL = lamps.length;
+    let droneL = drone.length;
+    
+    if (droneL > lampL) {
+      return 'o'.repeat(lampL);
+    }
+    else {
+      return 'o'.repeat(droneL) + 'x'.repeat(lampL - droneL);
+    }
+  }
 
 
 // # 4
