@@ -10,6 +10,8 @@ let number = function(array){
     return result;
   }
 
+const number2 = array => array.map((el, i) => `${i + 1}: ${el}`); // this uses iterator value on map
+
 
 // # 2
 // Filling an array (part 1)
